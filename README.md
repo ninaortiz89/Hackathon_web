@@ -9,6 +9,12 @@ export FLASK_APP= main.py
 ```
 4. Ahora correr el servidor 
 ```bash
-flask run  --host= ip: raspberrypi
+flask run  --host= ip_raspberry_pi
+
+```
+5. Acceder al navegador con la siguiente url: 
+
+```
+ip_raspberry_pi: 5000
 
 ```
