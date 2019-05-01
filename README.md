@@ -20,8 +20,9 @@ ip_raspberry_pi: 5000
 ```
 
 
-# Tutores Claves: Willi Bobadilla @WilliBobadilla, Lorena Zalazar @Lorelulen y Mauro Gavilan @mauroot
+
 # Participantes: Santi Avila @SantiagoAvila, Claudia Portal @clportal, Nidia Benitez @NidiaBenitez, Matias Portillo @Houndof
+# Tutores Claves: Willi Bobadilla @WilliBobadilla, Lorena Zalazar @Lorelulen y Mauro Gavilan @mauroot
 # Objetivo:
         En el presente archivo se intentara realizar una pagina web para el monitoreo de vacancias 
         de estacionamientos funcional en un local determinado utilizando raspberry, que responda en
