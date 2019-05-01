@@ -1,0 +1,86 @@
+<head>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'Style.css') }}">
+</head>
+
+<header>
+    <h1>
+      <span class="header-subtitile">Hackathon 2019</span>
+      <p class="header-title">
+        Penguin Parking
+      </p>
+    </h1>
+  </header>
+  <main>
+    <div class="car-line park">
+      <div class="car car-green" id="uno">
+        <div class="car-front"></div>
+        <div class="car-middle"></div>
+        <div class="car-back"></div>
+      </div>
+      <span class="vacancy passo1"></span>
+      <div class="car car-yellow" id="tres">
+        <div class="car-front"></div>
+        <div class="car-middle"></div>
+        <div class="car-back"></div>
+      </div>
+    </div>
+    <div class="car-line park">
+        <div class="car car-orange" id="cuatro" style="visibility:none;">
+          <div class="car-front"></div>
+          <div class="car-middle"></div>
+          <div class="car-back"></div>
+        </div>
+        <span class="vacancy passo1"></span>
+        <div class="car car-cyan" id="seis" style="visibility:none;">
+          <div class="car-front"></div>
+          <div class="car-middle"></div>
+          <div class="car-back"></div>
+        </div>
+     </div>    
+     <div class="car-line park">
+        <div class="car car-black" id="siete">
+          <div class="car-front"></div>
+          <div class="car-middle"></div>
+          <div class="car-back"></div>
+        </div>
+        <span class="vacancy passo1"></span>
+        <div class="car car-orange" id="nueve">
+          <div class="car-front"></div>
+          <div class="car-middle"></div>
+          <div class="car-back"></div>
+        </div>
+      </div>
+     </div>
+  </main>
+  
+  <h1 id = "datos1"> </h1>
+  <h1 id = "datos2"> </h1>
+
+  <script>
+        var datos = JSON.parse('{{ msg | tojson | safe}}');
+            document.getElementById("datos1").innerHTML=datos.sensor1;
+            document.getElementById("datos2").innerHTML=datos.sensor2;
+            if (datos.sensor1<14){
+              document.getElementById("cuatro").style.visibility = "visible";
+            }else{
+               document.getElementById("cuatro").style.visibility= "hidden";
+            }
+        if (datos.sensor2<14){
+            document.getElementById("seis").style.visibility = "visible";
+        }else
+          {
+            document.getElementById("seis").style.visibility = "hidden";
+          }
+          
+        setTimeout(function() {
+            location.reload();
+          }, 3000);     
+
+  </script>
+
+
+
+  
+
+
+
