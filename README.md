@@ -21,7 +21,7 @@ ip_raspberry_pi: 5000
 
 
 
-# Participantes: Santi Avila @SantiagoAvila, Claudia Portal @clportal, Nidia Benitez @NidiaBenitez, Matias Portillo @Houndof
+# Participantes: Santi Avila @SantiagoAvila, Claudia Portal @clportal, Nidia Benitez @NidiaBenitez, Matias Portillo @Houndof y Yanina Ortiz @ninaortiz89
 # Tutores Claves: Willi Bobadilla @WilliBobadilla, Lorena Zalazar @Lorelulen y Mauro Gavilan @mauroot
 # Objetivo:
         En el presente archivo se intentara realizar una pagina web para el monitoreo de vacancias 
